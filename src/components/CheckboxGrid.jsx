@@ -3,9 +3,11 @@ import React, { useState } from "react";
 const CheckboxGrid = () => {
   const [rows, setRows] = useState(2);
   const [columns, setColumns] = useState(2);
+  const [rowLabels, setRowLabels] = useState(["Row 1", "Row 2"]);
 
   const handleAddRow = () => {
     setRows(rows + 1);
+    setRowLabels([...rowLabels, `Row ${rows + 1}`]);
   };
 
   const handleAddColumn = () => {
@@ -17,30 +19,35 @@ const CheckboxGrid = () => {
       <table>
         <thead>
           <tr>
-            <th></th> {/* Empty cell for the corner */}
+            <th></th>
             {[...Array(columns)].map((_, index) => (
-              <th key={index}>
-                {/* Column header */}
-                <button onClick={handleAddColumn}>+</button>
-              </th>
+              <th key={index}></th>
             ))}
+            <th>
+              <button onClick={handleAddColumn}>+</button>
+            </th>
           </tr>
         </thead>
         <tbody>
-          {[...Array(rows)].map((_, rowIndex) => (
+          {rowLabels.map((label, rowIndex) => (
             <tr key={rowIndex}>
-              <th>
-                {/* Row header */}
-                <button onClick={handleAddRow}>+</button>
-              </th>
+              <th>{label}</th>
               {[...Array(columns)].map((_, colIndex) => (
                 <td key={colIndex}>
-                  {/* Checkbox */}
                   <input type="checkbox" />
                 </td>
               ))}
             </tr>
           ))}
+          <tr>
+            <th></th>
+            {[...Array(columns)].map((_, index) => (
+              <th key={index}></th>
+            ))}
+            <th>
+              <button onClick={handleAddRow}>+</button>
+            </th>
+          </tr>
         </tbody>
       </table>
     </div>
