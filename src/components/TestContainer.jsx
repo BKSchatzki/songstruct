@@ -2,7 +2,9 @@ import React from "react";
 
 function TestContainer({ children }) {
   return (
-    <div className="m-4 border-4 border-slate-800 bg-slate-200">{children}</div>
+    <div className="bg-slate-rounded-xl m-4 rounded-lg border-4 border-slate-500 p-4">
+      {children}
+    </div>
   );
 }
 
