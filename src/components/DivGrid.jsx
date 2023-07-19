@@ -7,7 +7,7 @@ function DivGrid() {
       <div className="checkbox-primary border-primary text-primary">
         <Row rowColor="primary" />
       </div>
-      <div className="checkbox-secondary border-secondary text-primary">
+      <div className="checkbox-secondary border-secondary text-secondary">
         <Row rowColor="secondary" />
       </div>
       <div className="checkbox-accent border-accent text-accent">

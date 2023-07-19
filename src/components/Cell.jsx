@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Cell(props) {
-  // const [cellChecked, setCellChecked] = useState(false);
+  const [cellChecked, setCellChecked] = useState(false);
+
+  const handleSetCellChecked = (event) => {
+    setCellChecked(event.target.checked);
+  };
 
   return (
     <input
       type="checkbox"
       className={`checkbox checkbox-lg mr-1 checkbox-${props.rowColor}`}
+      checked={cellChecked}
+      onChange={handleSetCellChecked}
     />
   );
 }
