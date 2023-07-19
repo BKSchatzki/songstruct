@@ -3,14 +3,28 @@ import Row from "./Row";
 
 function DivGrid() {
   return (
-    <div className="mx-auto flex flex-col">
-      <Row borderAccent="border-primary" />
-      <Row borderAccent="border-secondary" />
-      <Row borderAccent="border-accent" />
-      <Row borderAccent="border-info" />
-      <Row borderAccent="border-success" />
-      <Row borderAccent="border-warning" />
-      <Row borderAccent="border-error" />
+    <div className="mx-auto flex flex-col gap-1">
+      <div className="checkbox-primary border-primary text-primary">
+        <Row rowColor="primary" />
+      </div>
+      <div className="checkbox-secondary border-secondary text-primary">
+        <Row rowColor="secondary" />
+      </div>
+      <div className="checkbox-accent border-accent text-accent">
+        <Row rowColor="accent" />
+      </div>
+      <div className="checkbox-info border-info text-info">
+        <Row rowColor="info" />
+      </div>
+      <div className="checkbox-success border-success text-success">
+        <Row rowColor="success" />
+      </div>
+      <div className="checkbox-warning border-warning text-warning">
+        <Row rowColor="warning" />
+      </div>
+      <div className="checkbox-error border-error text-error">
+        <Row rowColor="error" />
+      </div>
     </div>
   );
 }
