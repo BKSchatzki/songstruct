@@ -3,7 +3,7 @@ import React from "react";
 function DivGrid() {
   return (
     <div>
-      <h1>Hi</h1>
+      <h1>DivGrid</h1>
     </div>
   );
 }

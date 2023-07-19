@@ -35,22 +35,22 @@ const CheckboxGrid = () => {
   };
 
   return (
-    <div>
-      <div className="flex flex-row pb-4">
-        <div className="mx-2 flex items-center text-xl uppercase">
+    <div className="card">
+      <div>
+        <div>
           <button onClick={handleDeleteRow}>
             <MinusSquare />
           </button>
-          <span className="mx-1">Row</span>
+          <span>Row</span>
           <button onClick={handleAddRow}>
             <PlusSquare />
           </button>
         </div>
-        <div className="mx-2 flex items-center text-xl uppercase">
+        <div>
           <button onClick={handleDeleteColumn}>
             <MinusSquare />
           </button>
-          <span className="mx-1">Col</span>
+          <span>Col</span>
           <button onClick={handleAddColumn}>
             <PlusSquare />
           </button>
