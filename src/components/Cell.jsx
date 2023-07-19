@@ -1,7 +1,13 @@
 import React from "react";
 
 function Cell() {
-  return <div>Cell</div>;
+  // const [cellChecked, setCellChecked] = useState(false);
+
+  return (
+    <div>
+      <input type="checkbox" className="checkbox checkbox-lg" />
+    </div>
+  );
 }
 
 export default Cell;
