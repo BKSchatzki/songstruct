@@ -12,7 +12,7 @@ function Header(props) {
       <input
         type="text"
         placeholder="instrument"
-        className={`input input-md w-48 text-end text-2xl placeholder:opacity-50 text-${props.rowColor}`}
+        className={`input input-md w-48 rotate-90 text-end text-2xl placeholder:opacity-50 text-${props.rowColor}`}
         value={instrumentName}
         onChange={handleSetInstrumentName}
       />

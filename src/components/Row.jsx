@@ -10,9 +10,9 @@ function Row(props) {
   ));
 
   return (
-    <div className={`flex flex-row items-center justify-start gap-4`}>
+    <div className={`flex flex-col items-center justify-center gap-4`}>
       <Header rowColor={props.rowColor} />
-      <ul>{cellItem}</ul>
+      <ul className="flex flex-col items-center justify-center">{cellItem}</ul>
     </div>
   );
 }

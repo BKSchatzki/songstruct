@@ -3,7 +3,7 @@ import Row from "./Row";
 
 function DivGrid() {
   return (
-    <div className="mx-auto flex flex-col gap-1">
+    <div className="mx-auto flex flex-row gap-1">
       <div className="checkbox-primary border-primary text-primary">
         <Row rowColor="primary" />
       </div>
