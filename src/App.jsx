@@ -6,11 +6,8 @@ import Row from "./components/Row";
 
 function App() {
   return (
-    <div>
+    <div className="flex h-screen items-center">
       <DivGrid />
-      <Cell />
-      <Header />
-      <Row />
     </div>
   );
 }
