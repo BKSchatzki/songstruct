@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Headers from "./Headers";
 import Section from "./Section";
-import Divider from "./Divider";
 
 function Arrangement() {
   const colors = [
@@ -18,9 +17,16 @@ function Arrangement() {
 
   const [sections, setSections] = useState([1]);
 
-  const addNewSection = () => {
+  const addNewSection = (index) => {
     const newSectionNumber = sections.length + 1;
-    setSections([...sections, newSectionNumber]);
+    const updatedSections = [...sections];
+    updatedSections.splice(index + 1, 0, newSectionNumber);
+    setSections(updatedSections);
+  };
+
+  const deleteSection = (index) => {
+    const updatedSections = sections.filter((_, i) => i !== index);
+    setSections(updatedSections);
   };
 
   return (
@@ -28,11 +34,15 @@ function Arrangement() {
       <div className="m-4 mx-auto flex h-fit w-full flex-col items-center justify-start rounded-3xl bg-neutral p-4 shadow-2xl">
         <Headers colors={colors} />
 
-        {sections.map((sectionNumber) => (
-          <Section key={sectionNumber} colors={colors} />
+        {/* Render existing sections */}
+        {sections.map((sectionNumber, index) => (
+          <Section
+            key={sectionNumber}
+            colors={colors}
+            onAddSection={() => addNewSection(index)}
+            onDeleteSection={() => deleteSection(index)}
+          />
         ))}
-
-        <Divider onClick={addNewSection} />
       </div>
     </div>
   );
