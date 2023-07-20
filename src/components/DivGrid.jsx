@@ -1,6 +1,5 @@
 import React from "react";
 import Row from "./Row";
-import Headers from "./Headers";
 
 function DivGrid() {
   return (
