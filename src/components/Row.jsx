@@ -13,7 +13,7 @@ function Row(props) {
     <div className={`flex flex-col items-center justify-center`}>
       <Header rowColor={props.rowColor} />
       <div className="divider mx-2"></div>
-      <ul className="flex flex-col items-center justify-center gap-4">
+      <ul className="flex flex-col items-center justify-center gap-6">
         {cellItem}
       </ul>
     </div>
