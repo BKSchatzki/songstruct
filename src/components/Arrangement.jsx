@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Headers from "./Headers";
 import Section from "./Section";
+import Divider from "./Divider";
 
 function Arrangement() {
   const colors = [
@@ -15,12 +16,23 @@ function Arrangement() {
     "-rose-500",
   ];
 
+  const [sections, setSections] = useState([1]);
+
+  const addNewSection = () => {
+    const newSectionNumber = sections.length + 1;
+    setSections([...sections, newSectionNumber]);
+  };
+
   return (
     <div className="mx-auto w-fit">
       <div className="m-4 mx-auto flex h-fit w-full flex-col items-center justify-start rounded-3xl bg-neutral p-4 shadow-2xl">
         <Headers colors={colors} />
-        <Section colors={colors} />
-        <Section colors={colors} />
+
+        {sections.map((sectionNumber) => (
+          <Section key={sectionNumber} colors={colors} />
+        ))}
+
+        <Divider onClick={addNewSection} />
       </div>
     </div>
   );
