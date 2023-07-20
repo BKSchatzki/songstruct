@@ -9,9 +9,9 @@ function Instrument(props) {
   };
 
   return (
-    <div>
+    <div className="-mx-[68px] mt-16 rotate-180">
       <input
-        className={`input input-md m-1 w-48 rounded-none bg-neutral-focus text-end text-2xl transition duration-300 ease-in-out placeholder:opacity-70 hover:bg-base-100 focus:bg-base-100 text${colors} placeholder:text${colors}`}
+        className={`input input-md my-1 w-48 rotate-90 cursor-vertical-text rounded-lg bg-base-100 text-start text-2xl shadow-2xl transition duration-300 ease-in-out placeholder:opacity-30 hover:bg-base-100 focus:bg-base-100 text${colors} placeholder:text${colors}`}
         onChange={handleInstrumentName}
         placeholder={`Inst ${instrumentNumber}`}
         type="text"
