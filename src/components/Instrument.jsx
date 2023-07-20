@@ -9,9 +9,9 @@ function Instrument(props) {
   };
 
   return (
-    <div>
+    <div className={`border-r-2 border${colors}`}>
       <input
-        className={`input input-sm mb-2 text-end align-middle text-2xl placeholder:opacity-50 text${colors}`}
+        className={`input input-sm m-2 me-3 w-48 text-end text-2xl transition duration-300 ease-in-out placeholder:opacity-50 hover:bg-neutral-focus focus:bg-neutral-focus text${colors}`}
         onChange={handleInstrumentName}
         placeholder={`Inst ${instrumentNumber}`}
         type="text"
