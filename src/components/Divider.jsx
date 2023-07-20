@@ -3,7 +3,10 @@ import React from "react";
 function Divider() {
   return (
     <div className="divider divider-vertical mb-1">
-      <span className="badge badge-lg uppercase">Intro</span>
+      <input
+        className="badge w-24 text-center align-middle placeholder:opacity-30"
+        placeholder="Section"
+      />
     </div>
   );
 }
