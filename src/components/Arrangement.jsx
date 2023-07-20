@@ -1,5 +1,6 @@
 import React from "react";
 import Headers from "./Headers";
+import Section from "./Section";
 
 function Arrangement() {
   const colors = [
@@ -15,8 +16,9 @@ function Arrangement() {
   ];
 
   return (
-    <div>
+    <div className="flex">
       <Headers colors={colors} />
+      <Section colors={colors} />
     </div>
   );
 }

@@ -13,6 +13,16 @@ function Dummy() {
       <div className="bg-violet-500" />
       <div className="bg-fuchsia-500" />
       <div className="bg-rose-500" />
+      {/* Background Colors Focus*/}
+      <div className="hover:bg-red-500" />
+      <div className="hover:bg-amber-500" />
+      <div className="hover:bg-lime-500" />
+      <div className="hover:bg-emerald-500" />
+      <div className="hover:bg-cyan-500" />
+      <div className="hover:bg-blue-500" />
+      <div className="hover:bg-violet-500" />
+      <div className="hover:bg-fuchsia-500" />
+      <div className="hover:bg-rose-500" />
       {/* Border Colors */}
       <div className="border-red-500" />
       <div className="border-amber-500" />
