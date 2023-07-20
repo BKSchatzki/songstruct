@@ -1,10 +1,10 @@
 import "./index.css";
-import DivGrid from "./components/DivGrid";
+import Arrangement from "./components/Arrangement";
 
 function App() {
   return (
-    <div className="flex items-center justify-between">
-      <DivGrid />
+    <div>
+      <Arrangement />
     </div>
   );
 }
