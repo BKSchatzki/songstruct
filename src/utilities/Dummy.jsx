@@ -43,6 +43,16 @@ function Dummy() {
       <div className="text-violet-500" />
       <div className="text-fuchsia-500" />
       <div className="text-rose-500" />
+      {/* Text Colors Placeholders */}
+      <div className="placeholder:text-red-500" />
+      <div className="placeholder:text-amber-500" />
+      <div className="placeholder:text-lime-500" />
+      <div className="placeholder:text-emerald-500" />
+      <div className="placeholder:text-cyan-500" />
+      <div className="placeholder:text-blue-500" />
+      <div className="placeholder:text-violet-500" />
+      <div className="placeholder:text-fuchsia-500" />
+      <div className="placeholder:text-rose-500" />
     </div>
   );
 }

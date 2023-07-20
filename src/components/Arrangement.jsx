@@ -16,8 +16,11 @@ function Arrangement() {
   ];
 
   return (
-    <div className="flex">
+    <div className="mx-auto flex h-fit max-w-7xl items-center justify-start rounded-3xl bg-base-300 shadow-2xl">
       <Headers colors={colors} />
+      <Section colors={colors} />
+      <Section colors={colors} />
+      <Section colors={colors} />
       <Section colors={colors} />
     </div>
   );

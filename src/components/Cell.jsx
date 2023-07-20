@@ -3,9 +3,9 @@ import React, { useState } from "react";
 function Cell(props) {
   const { colors } = props;
   const [cellAppearance, setcellAppearance] = useState([
-    `opacity-10 bg-neutral-content `,
-    `opacity-30 bg${colors}`,
-    `opacity-100 bg${colors}`,
+    `opacity-10 bg${colors} brightness-75`,
+    `opacity-50 bg${colors}`,
+    `opacity-100 bg${colors} brightness-125`,
   ]);
   const [currentcellAppearanceIndex, setCurrentcellAppearanceIndex] =
     useState(0);
@@ -19,7 +19,7 @@ function Cell(props) {
 
   return (
     <div
-      className={`mask mask-squircle ms-4 h-12 w-12 cursor-pointer blur-md transition duration-100 ease-in-out ${cellAppearance[currentcellAppearanceIndex]}`}
+      className={` ms-4 h-12 w-12 cursor-pointer transition duration-100 ease-in-out ${cellAppearance[currentcellAppearanceIndex]}`}
       onClick={handleCellClick}
     ></div>
   );

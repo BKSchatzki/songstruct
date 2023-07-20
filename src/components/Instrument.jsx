@@ -11,7 +11,7 @@ function Instrument(props) {
   return (
     <div>
       <input
-        className={`input input-sm m-2 me-3 w-48 text-end text-2xl transition duration-300 ease-in-out placeholder:opacity-50 hover:bg-neutral-focus focus:bg-neutral-focus text${colors}`}
+        className={`input input-md m-1 w-48 rounded-none bg-neutral-focus text-end text-2xl transition duration-300 ease-in-out placeholder:opacity-70 hover:bg-base-100 focus:bg-base-100 text${colors} placeholder:text${colors}`}
         onChange={handleInstrumentName}
         placeholder={`Inst ${instrumentNumber}`}
         type="text"
