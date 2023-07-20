@@ -10,7 +10,7 @@ function Cell(props) {
   return (
     <input
       type="checkbox"
-      className={`checkbox checkbox-lg mr-1 checkbox-${props.rowColor}`}
+      className={`checkbox checkbox-lg checkbox-${props.rowColor}`}
       checked={cellChecked}
       onChange={handleSetCellChecked}
     />

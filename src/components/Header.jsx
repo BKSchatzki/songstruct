@@ -8,11 +8,11 @@ function Header(props) {
   };
 
   return (
-    <div>
+    <div className="-mx-16 mb-16 rotate-180">
       <input
         type="text"
         placeholder="instrument"
-        className={`input input-md w-48 rotate-90 text-end text-2xl placeholder:opacity-50 text-${props.rowColor}`}
+        className={`input input-sm w-48 rotate-90 text-start align-middle text-2xl placeholder:opacity-50 text-${props.rowColor}`}
         value={instrumentName}
         onChange={handleSetInstrumentName}
       />
