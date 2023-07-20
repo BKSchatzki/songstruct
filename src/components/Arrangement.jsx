@@ -21,10 +21,6 @@ function Arrangement() {
         <Headers colors={colors} />
         <Section colors={colors} />
         <Section colors={colors} />
-        <Section colors={colors} />
-        <Section colors={colors} />
-        <Section colors={colors} />
-        <Section colors={colors} />
       </div>
     </div>
   );

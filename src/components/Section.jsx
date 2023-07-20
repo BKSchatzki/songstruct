@@ -6,7 +6,7 @@ function Section(props) {
   const { colors } = props;
 
   return (
-    <div className="mt-8 flex flex-col gap-2 rounded-2xl px-4 pb-4 shadow-2xl">
+    <div className="mt-2 flex flex-col gap-1 rounded-2xl px-4 pb-4 shadow-2xl">
       <Divider />
       <div className="flex flex-row items-start justify-center gap-2">
         {colors.map((color, index) => (
