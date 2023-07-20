@@ -14,6 +14,7 @@ function Divider(props) {
       <input
         className="text-md badge w-24 text-center align-middle placeholder:opacity-30"
         placeholder="Section"
+        type="text"
       />
     </div>
   );
