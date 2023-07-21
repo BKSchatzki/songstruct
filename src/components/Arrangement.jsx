@@ -15,8 +15,10 @@ function Arrangement() {
     "-rose-500",
   ];
 
-  const [sections, setSections] = useState([1]);
+  // State to keep track of sections
+  const [sections, setSections] = useState([1]); // Start with one section
 
+  // Function to add a new section after the specified index
   const addNewSection = (index) => {
     const newSectionNumber = sections.length + 1;
     const updatedSections = [...sections];
@@ -24,6 +26,7 @@ function Arrangement() {
     setSections(updatedSections);
   };
 
+  // Function to delete the section at the specified index
   const deleteSection = (index) => {
     const updatedSections = sections.filter((_, i) => i !== index);
     setSections(updatedSections);
