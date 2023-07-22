@@ -17,13 +17,15 @@ function Arrangement() {
 
   // State to keep track of sections
   const [sections, setSections] = useState([1]); // Start with one section
+  const [nextSectionNumber, setnextSectionNumber] = useState(2);
 
   // Function to add a new section after the specified index
   const addNewSection = (index) => {
-    const newSectionNumber = sections.length + 1;
+    const newSectionNumber = nextSectionNumber;
     const updatedSections = [...sections];
     updatedSections.splice(index + 1, 0, newSectionNumber);
     setSections(updatedSections);
+    setnextSectionNumber((prevNumber) => prevNumber + 1);
   };
 
   // Function to delete the section at the specified index
