@@ -36,7 +36,7 @@ function Arrangement() {
 
   return (
     <div className="mx-auto w-fit">
-      <div className="my-4 flex h-fit w-fit flex-col items-center justify-start rounded-3xl bg-neutral p-4 shadow-2xl">
+      <div className="m-7 flex h-fit w-fit flex-col items-center justify-start rounded-3xl bg-neutral p-4 shadow-2xl">
         <Headers colors={colors} />
 
         {/* Render existing sections */}
