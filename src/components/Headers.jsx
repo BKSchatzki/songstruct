@@ -6,7 +6,7 @@ function Headers(props) {
 
   return (
     <div>
-      <div className="flex flex-row items-start justify-start gap-0 rounded-2xl bg-neutral-focus p-2 pb-[72px] shadow-2xl">
+      <div className="flex flex-row items-start justify-start gap-0 rounded-2xl bg-neutral p-2 pb-[72px] shadow-2xl brightness-125">
         {colors.map((color, index) => (
           <Instrument colors={color} key={index} instrumentNumber={++index} />
         ))}
