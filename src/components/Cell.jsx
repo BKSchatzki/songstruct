@@ -19,7 +19,7 @@ function Cell(props) {
 
   return (
     <div
-      className={`mask mask-squircle h-8 w-8 cursor-pointer transition duration-100 ease-in-out hover:brightness-125 active:scale-90 ${cellAppearance[currentcellAppearanceIndex]}`}
+      className={`mask mask-squircle h-8 w-8 cursor-pointer transition duration-100 ease-in-out hover:brightness-125 ${cellAppearance[currentcellAppearanceIndex]}`}
       onClick={handleCellClick}
     ></div>
   );

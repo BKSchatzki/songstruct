@@ -7,7 +7,7 @@ function Divider(props) {
   return (
     <div className="divider divider-vertical mb-2 brightness-125">
       <button
-        className="rounded-full text-neutral-focus outline-0 transition duration-100 ease-in-out hover:brightness-150 focus:brightness-150 active:scale-90"
+        className="rounded-full text-neutral-focus outline-0 transition duration-100 ease-in-out hover:brightness-200 focus:brightness-200 active:scale-90"
         onClick={onDeleteSection}
       >
         <MinusCircle />
@@ -17,7 +17,7 @@ function Divider(props) {
         placeholder="Section"
       />
       <button
-        className="rounded-full text-neutral-focus outline-0 transition duration-100 ease-in-out hover:brightness-150 focus:brightness-150 active:scale-90"
+        className="rounded-full text-neutral-focus outline-0 transition duration-100 ease-in-out hover:brightness-200 focus:brightness-200 active:scale-90"
         onClick={onAddSection}
       >
         <PlusCircle />
