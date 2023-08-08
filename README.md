@@ -1,14 +1,14 @@
 # My Awesome Project
 
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+A simple song templater to help music producers minimize decision fatigue. Plans to implement a backend so users can save and share templates, with local storage as the intermediary.
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+**Link to project:** https://songstruct.netlify.app
 
-![alt tag](http://placecorgi.com/1200/650)
+![alt tag](https://res.cloudinary.com/djqsm7sz5/image/upload/v1691468692/bks-portfolio/songstruct_z756ky.jpg)
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** Vite, React, Tailwind, DaisyUI
 
 Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write _something_. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
 
