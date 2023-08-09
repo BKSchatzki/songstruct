@@ -1,4 +1,4 @@
-# My Awesome Project
+# SongStruct
 
 A simple song templater to help music producers minimize decision fatigue. Plans to implement a backend so users can save and share templates, with local storage as the intermediary.
 
