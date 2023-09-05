@@ -1,5 +1,7 @@
 # SongStruct
 
+This is an old project that has been refactored. See SongStrudel: https://github.com/BKSchatzki/songstrudel
+
 A simple song templater to help music producers minimize decision fatigue. Plans to implement a backend so users can save and share templates, with local storage as the intermediary.
 
 **Link to project:** https://songstruct.netlify.app
@@ -29,3 +31,5 @@ Take a look at some more examples in my portfolio:
 **C Flat Run:** https://github.com/BKSchatzki/cflatrun-landingpage
 
 **Nick B. Schatzki:** https://github.com/BKSchatzki/nbs-portfolio
+
+**SongStrudel:** https://github.com/BKSchatzki/songstrudel
